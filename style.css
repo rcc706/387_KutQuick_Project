@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --accent-color: grey;
+    --base-color: white;
+    --text-color: black;
+    --input-color: #eaeaea;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
+    font-size: 12pt;
+    font-style: normal;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    background-color: var(--base-color);
+    height: auto;
+    width: max(40%, 600px);
+    padding: 50px 30px; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px; 
+}
+
+form {
+    width: min(400px, 100%);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0; 
+}
+
+form label {
+    flex-shrink: 0;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+}
+
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 50px;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid var(--input-color);
+    background-color: var(--input-color);
+    transition: 150ms ease;
+}
+
+form input:hover,
+form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+form button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 1000px;
+    padding: 1em 4em;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+form button:hover {
+    background-color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
